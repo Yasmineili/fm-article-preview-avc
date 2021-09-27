@@ -1,0 +1,117 @@
+:root {
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+.article {
+  /* background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--lightGrayishBlue);
+  /* display post */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  max-width: 700px;
+  min-height: 200px;
+  border-radius: 10px;
+  margin: auto 1.3em;
+  background-color: white;
+  box-shadow: 5px 6px 13px rgba(224, 225, 226, 0.5);
+}
+
+.frame {
+  width: 100%; /*650px*/
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.image-post {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  margin: 0;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  margin: 32px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  color: var(--veryDarkGrayishBlue);
+}
+
+.description {
+  margin: 18px 0;
+  line-height: 20px;
+  color: var(--desaturatedDarkBlue);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+.personal-data {
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.username {
+  font-weight: 700;
+  color: var(--veryDarkGrayishBlue);
+}
+
+.date {
+  color: var(--grayishBlue);
+}
+
+/* Button Share ~ Social Network */
+.share {
+  /* circle */
+  min-width: 30px;
+  min-height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--lightGrayishBlue);
+  /* contain arrow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-icon {
+  color: blue;
+}
+
+.arrow-icon.active path {
+  fill:brown;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
