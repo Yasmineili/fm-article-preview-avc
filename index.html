@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./src/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
-  <!--<link rel="arrow-icon" type="image/png" sizes="32x32" href="./src/images/icon-share.svg">-->
-  <title>Frontend Mentor | Article preview component</title>
-</head>
-<body>
-  <div class="article">
-    <div class="card">
-      <div class="frame">
-      <img class="image-post" src="./src/images/drawers.jpg" alt="interior-design"/>
-      </div>
-      <div class="container">
-        <p class="title">
-          Shift the overall look and feel by adding these wonderful 
-          touches to furniture in your home
-        </p>
-        <p class="description">
-          Ever been in a room and felt like something was missing? Perhaps 
-          it felt slightly bare and uninviting. I’ve got some simple tips 
-          to help you make any room feel complete.
-        </p>
-        <div class="author">
-          <img class="profile" src="./src/images/avatar-michelle.jpg" alt="avatar-profile"/>
-          <div class="personal-data">
-            <p class="username">Michelle Appleton</p>
-            <p class="date">28 Jun 2020</p>
-          </div>
-          <div class="share">
-            <img class="arrow-icon active" src="./src/images/icon-share.svg" alt="share"/>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    <script type="text/javascript" src="./src/share.js"></script>
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <div class="article">
+      <div class="card">
+        <div class="frame">
+        <img class="image-post" src="./src/images/drawers.jpg" alt="interior-design"/>
+        </div>
+        <div class="container">
+          <p class="title">
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+          </p>
+          <p class="description">
+            Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+          </p>
+          <div class="author">
+            <img class="profile" src="./src/images/avatar-michelle.jpg" alt="avatar-profile"/>
+            <div class="personal-data">
+              <p class="username">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </div>
+            <div class="share">
+              <div id="button" onclick="showOptios()">
+                <img class="arrow-icon" src="./src/images/icon-share.svg" alt="share"/>
+              </div>
+              <div id="options">
+                <p>SHARE</p>
+                <img src="./src/images/icon-facebook.svg" alt="facebook"/>
+                <img src="./src/images/icon-twitter.svg" alt="twitter"/>
+                <img src="./src/images/icon-pinterest.svg" alt="pinterest"/>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/Yasmineili">Andrea Vargas Castro</a>.
+      </div>
     </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/Yasmineili">Andrea Vargas Castro</a>.
-    </div>
-  </div>
-</body>
+  </body>
 </html>
