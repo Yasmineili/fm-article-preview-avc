@@ -4,6 +4,7 @@ function toogleActive(id) {
 }
 
 function showOptios() {
+  toogleActive("image-footer");
   toogleActive("button");
   toogleActive("options");
 }
