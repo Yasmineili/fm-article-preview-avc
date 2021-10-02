@@ -127,7 +127,7 @@ p {
   justify-content: center;
 }
 
-#button { 
+.button { 
   /* circle */
   z-index: 1;
   cursor: pointer;
@@ -141,30 +141,27 @@ p {
   align-items: center;
 }
 
-#button.active 
+.author.active > .share > .button 
 { background-color: var(--desaturatedDarkBlue); }
 
-#button.active > .arrow-icon {
-  filter: brightness(0) invert(1);
-}
+.author.active > .share > .button > .arrow-icon 
+{ filter: brightness(0) invert(1); }
 
 /* Box with options */
-#options {
+.options {
   visibility: hidden;
   position: absolute;
 }
 
-#options.active {
+.author.active > .share > .options {
   visibility: visible;
   display: flex;
   align-items: center;
   background-color: var(--veryDarkGrayishBlue);
 }
 
-#options img { cursor: pointer; }
-
 @media screen and (min-width: 861px) {
-  #options.active {
+  .author.active > .share > .options {
     bottom: 140%;
     width: 170px;
     padding: 15px 35px;
@@ -172,7 +169,7 @@ p {
     justify-content: space-between;
   }
 
-  #options.active::before {
+  .author.active > .share > .options::before {
     --triangleSize: 10px;
     content: '';
     z-index: 1;
@@ -185,7 +182,7 @@ p {
     border-width: var(--triangleSize);
   }
 
-  #options.active > p  {
+  .author.active > .share > .options > p  {
     font-size: 12px;
     letter-spacing: 5px;
     color: var(--grayishBlue);
@@ -206,7 +203,7 @@ p {
   .author.active > .profile 
   { content-visibility: hidden; }
 
-  #options.active {
+  .author.active > .share > .options {
     width: 100%;
     height: 45px;
     bottom: -21px;
@@ -216,13 +213,13 @@ p {
     border-bottom-right-radius: 10px;
   }
 
-  #options.active > p  {
+  .author.active > .share > .options > p  {
     font-size: 12px;
     letter-spacing: 5px;
     color: var(--grayishBlue);
   }
 
-  #options img { margin-left: 5% ;}
+  .options a { margin-left: 5% ;}
 }
 /* #endregion */
 
