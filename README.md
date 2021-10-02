@@ -24,7 +24,7 @@ This project required basic knowledge of **HTML**, **CSS** and a tiny bit of **J
 - [Author](#author)
 - [Experience](#acknowledgments)
 
-## 📌 Overview
+## Overview
 
 ### The challenge
 
@@ -44,7 +44,7 @@ Users should be able to:
 - Solution URL: [Solution](https://github.com/Yasmineili/fm-article-preview-avc)
 - Live Site URL: [Live site](https://yasmineili.github.io/fm-article-preview-avc/)
 
-## 📌 My process
+## My process
 
 ### Built with
 
@@ -71,11 +71,11 @@ I'd like to keep focusing on CSS Flexbox because it was kind of difficult to ord
 - [Resource 1](https://stackoverflow.com/questions/57408400/how-to-conditionally-apply-a-css-class/57408614#57408614) - This helped me for understend CSS properties. It's a short and clear answer.
 - [Resource 2](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) - This is an amazing blog which helped me to understand pseudo-element. I'd recommend it to anyone still learning about CSS.
 
-## 📌 Author
+## Author
 
 - Frontend Mentor - [@Yasmineili](https://www.frontendmentor.io/profile/Yasmineili)
 
-## 📌 Experience
+## Experience
 
 This is my first front end code challenge, I really liked coding it and learning in progress. I would like to receive feedback on my solution.
 
