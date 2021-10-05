@@ -83,8 +83,9 @@ h1, h2, p {
   margin: 32px;
 }
 
-.title {
+h1 {
   font-size: 20px;
+  font-weight: 700px;
   letter-spacing: 0.035em;
   color: var(--veryDarkGrayishBlue);
 }
@@ -111,8 +112,8 @@ h1, h2, p {
   margin-right: auto;
 }
 
-.name { color: var(--veryDarkGrayishBlue);}
-.date { color: var(--grayishBlue); }
+h2 { color: var(--veryDarkGrayishBlue);}
+.personal-data > p { color: var(--grayishBlue); }
 /* #endregion */
 
 /* #region Button Share ~ Social Network */
@@ -124,7 +125,8 @@ h1, h2, p {
   justify-content: center;
 }
 
-.button { 
+button {
+  border-color: transparent;
   /* circle */
   z-index: 1;
   cursor: pointer;
@@ -138,10 +140,10 @@ h1, h2, p {
   align-items: center;
 }
 
-.author.active > .share > .button 
+.author.active > .share > button 
 { background-color: var(--desaturatedDarkBlue); }
 
-.author.active > .share > .button > .arrow-icon 
+.author.active > .share > button > .arrow-icon 
 { filter: brightness(0) invert(1); }
 
 /* Box with options */

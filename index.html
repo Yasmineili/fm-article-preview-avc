@@ -6,17 +6,16 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
-    <script src="./src/share.js"></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
     <main>
       <div class="card">
         <div class="frame">
-        <img class="image-post" src="./src/images/drawers.jpg" alt="interior-design"/>
+        <img class="image-post" src="./src/images/drawers.jpg" alt="interior home furnishing"/>
         </div>
         <div class="container">
-          <h1 class="title">
+          <h1>
             Shift the overall look and feel by adding these wonderful 
             touches to furniture in your home
           </h1>
@@ -26,10 +25,10 @@
             to help you make any room feel complete.
           </p>
           <div id="image-footer" class="author">
-            <img class="profile" src="./src/images/avatar-michelle.jpg" alt="michelle appleton"/>
+            <img class="profile" src="./src/images/avatar-michelle.jpg" alt="michelle appleton" aria-hidden="false"/>
             <div class="personal-data">
-              <h2 class="name">Michelle Appleton</h2>
-              <p class="date">28 Jun 2020</p>
+              <h2>Michelle Appleton</h2>
+              <p>28 Jun 2020</p>
             </div>
             <div class="share">
               <div class="options">
@@ -44,9 +43,9 @@
                   <img src="./src/images/icon-pinterest.svg" alt="" aria-hidden="true"/>
                 </a>
               </div>
-              <div class="button" onclick="showOptios()">
+              <button aria-label="social media link dropdown" aria-expanded="false" onclick="showOptios()">
                 <img class="arrow-icon" src="./src/images/icon-share.svg" alt="share"/>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -56,5 +55,6 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/Yasmineili">Andrea Vargas Castro</a>.
     </footer>
+    <script src="./src/share.js"></script>
   </body>
 </html>
