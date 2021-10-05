@@ -6,42 +6,42 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
-    <script type="text/javascript" src="./src/share.js"></script>
+    <script src="./src/share.js"></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    <div class="article">
+    <main>
       <div class="card">
         <div class="frame">
         <img class="image-post" src="./src/images/drawers.jpg" alt="interior-design"/>
         </div>
         <div class="container">
-          <p class="title">
+          <h1 class="title">
             Shift the overall look and feel by adding these wonderful 
             touches to furniture in your home
-          </p>
+          </h1>
           <p class="description">
             Ever been in a room and felt like something was missing? Perhaps 
             it felt slightly bare and uninviting. I’ve got some simple tips 
             to help you make any room feel complete.
           </p>
           <div id="image-footer" class="author">
-            <img class="profile" src="./src/images/avatar-michelle.jpg" alt="avatar-profile"/>
+            <img class="profile" src="./src/images/avatar-michelle.jpg" alt="michelle appleton"/>
             <div class="personal-data">
-              <p class="name">Michelle Appleton</p>
+              <h2 class="name">Michelle Appleton</h2>
               <p class="date">28 Jun 2020</p>
             </div>
             <div class="share">
               <div class="options">
                 <p>SHARE</p>
-                <a href="#facebook">
-                  <img src="./src/images/icon-facebook.svg" alt="facebook"/>
+                <a href="#facebook" aria-label="facebook">
+                  <img src="./src/images/icon-facebook.svg" alt="" aria-hidden="true"/>
                 </a>
-                <a href="#twitter">
-                  <img src="./src/images/icon-twitter.svg" alt="twitter"/>
+                <a href="#twitter" aria-label="twitter">
+                  <img src="./src/images/icon-twitter.svg" alt="" aria-hidden="true"/>
                 </a>
-                <a href="#pinterest">
-                  <img src="./src/images/icon-pinterest.svg" alt="pinterest"/>
+                <a href="#pinterest" aria-label="pinterest">
+                  <img src="./src/images/icon-pinterest.svg" alt="" aria-hidden="true"/>
                 </a>
               </div>
               <div class="button" onclick="showOptios()">
@@ -51,10 +51,10 @@
           </div>
         </div>
       </div>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://www.frontendmentor.io/profile/Yasmineili">Andrea Vargas Castro</a>.
-      </div>
-    </div>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Yasmineili">Andrea Vargas Castro</a>.
+    </footer>
   </body>
 </html>

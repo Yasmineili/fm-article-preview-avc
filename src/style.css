@@ -6,20 +6,27 @@
   --lightGrayishBlue: hsl(210, 46%, 95%);
 }
 
-body { background-color: var(--lightGrayishBlue); }
+html {
+  box-sizing: border-box;
+}
 
-.article {
-  /* environment */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* display post */
-  display: flex;
-  justify-content: center;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body { 
+  background-color: var(--lightGrayishBlue);
+}
+
+main {
   align-items: center;
+  display: flex;
+  margin: 0;
+  min-height: 95vh; /*100vh*/
   flex-direction: column;
+  justify-content: center;
 }
 
 .card {
@@ -32,11 +39,7 @@ body { background-color: var(--lightGrayishBlue); }
 }
 
 /* #region Responsive image */
-.frame {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
+.frame { overflow: hidden; }
 
 .image-post { object-fit: cover; }
 
@@ -47,8 +50,9 @@ body { background-color: var(--lightGrayishBlue); }
   }
 
   .image-post {
-    width: 120%;
+    width: 100%;
     height: 100%;
+    object-position: left;
   }
 }
 
@@ -69,7 +73,7 @@ body { background-color: var(--lightGrayishBlue); }
 /* #endregion */
 
 /* #region Body post */
-p {
+h1, h2, p {
   margin: 0;
   font-size: 13px;
   font-family: "Manrope", sans-serif;
@@ -81,7 +85,6 @@ p {
 
 .title {
   font-size: 20px;
-  font-weight: 700;
   letter-spacing: 0.035em;
   color: var(--veryDarkGrayishBlue);
 }
@@ -108,14 +111,8 @@ p {
   margin-right: auto;
 }
 
-.name {
-  font-weight: 700;
-  color: var(--veryDarkGrayishBlue);
-}
-
-.date {
-  color: var(--grayishBlue);
-}
+.name { color: var(--veryDarkGrayishBlue);}
+.date { color: var(--grayishBlue); }
 /* #endregion */
 
 /* #region Button Share ~ Social Network */
@@ -163,8 +160,8 @@ p {
 @media screen and (min-width: 861px) {
   .author.active > .share > .options {
     bottom: 140%;
-    width: 170px;
-    padding: 15px 35px;
+    width: 230px;
+    padding: 15px 30px;
     border-radius: 10px;
     justify-content: space-between;
   }
@@ -204,8 +201,8 @@ p {
   { content-visibility: hidden; }
 
   .author.active > .share > .options {
-    width: 100%;
-    height: 45px;
+    width: calc(100% + 64px);
+    height: 80px;
     bottom: -21px;
     right: -32px;
     padding: 15px 32px;
